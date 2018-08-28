@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>My Conversation</h1>
+
+    <a href="http://127.0.0.1:8000/app/facebook/all/conversations">Go Conversations</a></br></br>
+
+    <form method="post">  
+        <label>Message:</label>
+        <textarea type="textarea" name="message"></textarea></br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="container">
+        <br style="clear:both">
+        
+            {% for message in conversation %}
+            <h2>{{ message["from"]}}</h2>   
+            <p>{{ message["message"]}}<p>
+            <p>{{ message["time"]}}<p></br></br>
+        {% endfor %}
+    <div>
+
+{% endblock %}

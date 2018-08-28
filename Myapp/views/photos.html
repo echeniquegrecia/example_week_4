@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>My Photos</h1>
+
+    <a href="http://127.0.0.1:8000/app/facebook/home">Go home</a></br></br>
+
+    <form method="post">
+        <label>Put the link of your photo:</label>
+        <input type="text" name="url">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    {% for photo in photos %}
+        <a href= {{ "/app/facebook/delete/photo/" }}{{ photo['id']}}>Delete</a><br>
+        <img src= {{  photo['source']}} ><br>
+    {% endfor %}
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
