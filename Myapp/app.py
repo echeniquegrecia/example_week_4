@@ -3,7 +3,7 @@ import requests
 app = Flask(__name__, template_folder= 'views')
 
 
-token= 'EAAd6sZBomBwwBAK0e2Gue9UTQhnAiokCUEg8F15VQYT4KnIFBHlYYnfyZA3aKr5IBIc5Deg5ys4TkAspgF86xP4KJuC0f50VcZBchu7wsAR84Xew8jd1Lz20ZAA5goZBFvL9Cgu1ZCQn4YpEDl69PBKivGADAYOfAZD'
+token= "XXX"'
 
 @app.route("/app/facebook/home")
 def home():

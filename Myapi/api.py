@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 api = Api(app)
-token = "EAAf78PB51bUBAMDdGLPFpiajkRsLHLOjblIiDsKLUeHQpSgFRaZAQaYEJCYiNv7iv3CgtnJYHKzsXguBJQVrdCsjYp7maP2OqKbN5ZAi37yRKKAZAKc8ixbvqZAFDZBGQKbMisYJbuEmbAmUIuYk3uDDC6jgsXagJxNbG3h7d0gZDZD"
+token = "XXX"
 
 
 @api.route('/api/facebook/all/posts')
